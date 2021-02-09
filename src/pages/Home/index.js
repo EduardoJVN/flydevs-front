@@ -31,7 +31,6 @@ export default  function App() {
         }
         setOpen(false)
       }catch(err){
-        console.log(err)
         setOpen(false)
       }
   }
@@ -46,16 +45,14 @@ export default  function App() {
       setOpen(true)
       
       const response = await searchPokemons(text)
-      console.log("aaaa",response)
       setPokemons(response)
       setOpen(false)
     }catch(err){
-      console.log(err)
       setOpen(false)
     }
   }
 
-  const setNameHandler = (event) =>{
+  const setNameHandler = event =>{
     setText(event.target.value)
   }
 
