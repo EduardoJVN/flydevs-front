@@ -15,7 +15,7 @@ export default  function App() {
   const [open,setOpen] = useState(true)
   const [openSnack,SetOpenSnack] = useState({view:false,text:""})
   const [text,setText] = useState("")
-
+  const [errorName,setErrorName] = useState(false)
   const classes = useStyles();
 
   useEffect(async () => {
@@ -31,19 +31,27 @@ export default  function App() {
         }
         setOpen(false)
       }catch(err){
-        SetOpenSnack({view:true,text:err.data.message})
+        console.log(err)
+        setOpen(false)
       }
   }
 
   const searchPokemonHandler = async () => {
     try{
+      if(text == ""){
+        setErrorName(true)
+        return
+      }
+      setErrorName(false)
       setOpen(true)
+      
       const response = await searchPokemons(text)
+      console.log("aaaa",response)
       setPokemons(response)
-      console.log(response)
       setOpen(false)
     }catch(err){
-      SetOpenSnack({view:true,text:err.data.message})
+      console.log(err)
+      setOpen(false)
     }
   }
 
@@ -64,7 +72,7 @@ export default  function App() {
         <Typography variant="subtitle1" color="textSecondary" >El que quiere pokemons, que los busque.</Typography>
         <Grid container spacing={3}>
             <Grid item xs={8}>
-                <TextField label="Nombre del pokemon" className={classes.input} onChange={setNameHandler}/>
+                <TextField label="Nombre del pokemon" className={classes.input} onChange={setNameHandler} error={errorName}/>
             </Grid>
             <Grid item xs={4}>
                 <Button variant="contained" className={classes.button} onClick={searchPokemonHandler}>Buscar</Button>
@@ -72,14 +80,7 @@ export default  function App() {
         </Grid>
             
         <Grid container spacing={3}>
-        {pokemons.length > 0 ? 
-            (
-                <Table/>
-            ) : 
-            (
-                null
-            )
-        }
+        <Table quantity={pokemons.length}/>
         {pokemons.map((data, index) => (
             <Item data={data} key={index}/>
         ))}

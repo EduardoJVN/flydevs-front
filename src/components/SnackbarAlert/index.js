@@ -9,6 +9,7 @@ export default function SnackbarAlert({openSnack}) {
                 vertical: 'bottom',
                 horizontal: 'center',
             }}
+            autoHideDuration={3000}
             open={openSnack.view}
             message={openSnack.text}
         />
