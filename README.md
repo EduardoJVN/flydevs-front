@@ -5,6 +5,9 @@ Copy the .env.example file and rename it to .env, changing the REACT_APP_API_URL
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm install`
+
+run npm build to install all dependencies
 
 ### `npm start`
 
