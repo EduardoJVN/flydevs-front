@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+  >
+    <h1
+      class="MuiTypography-root tableTitle MuiTypography-h6 MuiTypography-gutterBottom"
+    >
+      No hay resultados de la búsqueda
+    </h1>
+  </div>
+</div>
+`;

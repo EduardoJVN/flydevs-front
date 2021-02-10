@@ -2,7 +2,7 @@ import { Dialog , DialogContent , CircularProgress , Grid} from '@material-ui/co
 import {Fragment} from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-function Loader({open}) {
+export default function Loader({open}) {
     const classes = useStyles();
     return(
         <div className={classes.root}>
@@ -42,4 +42,3 @@ const useStyles = makeStyles((theme) => ({
       maxHeight: 435,
     }
 }));
-export default Loader;

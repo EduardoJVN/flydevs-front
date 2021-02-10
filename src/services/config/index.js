@@ -1,2 +1,1 @@
-import env from "react-dotenv";
-export const route = env.API_URL
+export const route = process.env.REACT_APP_API_URL

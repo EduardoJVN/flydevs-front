@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="MuiGrid-root itemList MuiGrid-item MuiGrid-grid-xs-12"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-1"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-sm-4 MuiGrid-grid-md-2 MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+        >
+          <img
+            class="image"
+            src="https://static.wikia.nocookie.net/pokemon-fano/images/6/6f/Poke_Ball.png/revision/latest/scale-to-width-down/340?cb=20140520015336"
+            style="width: 100%; height: 150px;"
+          />
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-md-10 MuiGrid-grid-lg-10 MuiGrid-grid-xl-10"
+        >
+          <h5
+            class="MuiTypography-root MuiTypography-h5"
+          >
+            pikachu
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

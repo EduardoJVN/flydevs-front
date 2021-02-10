@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App correctly 1`] = `
+<div>
+  <div
+    class="makeStyles-root-1"
+  >
+    <div
+      class="makeStyles-root-4"
+    />
+    <main
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
+        data-testid="title"
+      >
+        Pokemon finder
+      </h1>
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary"
+      >
+        El que quiere pokemons, que los busque.
+      </h6>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root makeStyles-input-2"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+              data-shrink="true"
+            >
+              Nombre del pokemon
+            </label>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiInput-input"
+                type="text"
+                value="ditto"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-3"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Buscar
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+        >
+          <h1
+            class="MuiTypography-root tableTitle MuiTypography-h6 MuiTypography-gutterBottom"
+          >
+            Resultados de la búsqueda
+          </h1>
+        </div>
+        <div
+          class="MuiGrid-root itemList MuiGrid-item MuiGrid-grid-xs-12"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-6"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-sm-4 MuiGrid-grid-md-2 MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+              >
+                <img
+                  class="image"
+                  src="test"
+                  style="width: 100%; height: 150px;"
+                />
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-md-10 MuiGrid-grid-lg-10 MuiGrid-grid-xl-10"
+              >
+                <h5
+                  class="MuiTypography-root MuiTypography-h5"
+                >
+                  ditto
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+`;
